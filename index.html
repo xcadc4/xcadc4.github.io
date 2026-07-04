@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>appidori Studio</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --ink: #2b2620;
+    --paper: #faf6ef;
+    --muted: #7a7266;
+    --line: #e5ddd0;
+    --accent: #8a6d3b;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink: #e8e2d8;
+      --paper: #201d18;
+      --muted: #9a9184;
+      --line: #3a352d;
+      --accent: #c9a86a;
+    }
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Apple SD Gothic Neo", "Noto Sans KR", -apple-system, sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    line-height: 1.75;
+    padding: 4rem 1.25rem 5rem;
+  }
+  main { max-width: 42rem; margin: 0 auto; }
+  h1 { font-size: 1.75rem; margin-bottom: .25rem; }
+  .tagline { color: var(--muted); margin-bottom: 3rem; }
+  .app {
+    border: 1px solid var(--line);
+    border-radius: .75rem;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .app h2 { font-size: 1.125rem; margin-bottom: .25rem; }
+  .app p { color: var(--muted); font-size: .9375rem; margin-bottom: .5rem; }
+  .app a { color: var(--accent); font-size: .875rem; margin-right: 1rem; }
+  footer {
+    max-width: 42rem;
+    margin: 4rem auto 0;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: .875rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>appidori Studio</h1>
+  <p class="tagline">일상을 돕는 작은 앱들</p>
+
+  <div class="app">
+    <h2>워드스냅</h2>
+    <p>내 책을 사진으로 찍어 단어를 모으고, 과학적 반복으로 암기하는 영어 단어장.</p>
+    <a href="/wordsnap/privacy.html">개인정보처리방침</a>
+  </div>
+</main>
+<footer>문의: <a href="mailto:xcadc4@gmail.com" style="color:var(--accent)">xcadc4@gmail.com</a> · © 2026 appidori Studio</footer>
+</body>
+</html>
